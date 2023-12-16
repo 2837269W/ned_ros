@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import logging
@@ -16,9 +16,9 @@ from niryo_robot_vision.image_functions import debug_threshold_color, debug_mark
 from niryo_robot_vision.math_functions import euclidean_3d_dist, calculate_barycenter
 from niryo_robot_vision.visualization_functions import *
 from niryo_robot_vision.CalibrationObject import CalibrationObject
-from ObjectDetector import ObjectDetector
-from fonctions_camera import generate_msg_from_image
-from VideoStream import WebcamStream, GazeboStream
+from niryo_robot_vision.ObjectDetector import ObjectDetector
+from niryo_robot_vision.fonctions_camera import generate_msg_from_image
+from niryo_robot_vision.VideoStream import WebcamStream, GazeboStream
 from tf.transformations import quaternion_from_matrix
 
 # Messages
